@@ -9,10 +9,11 @@ export default function Index() {
           <Ship size={54} className="inline-block" />
           <p className="">Strategic warfare at sea</p>
         </div>
-        <div className="space-y-4">
+        <div>
           <button className="btn-block bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg font-medium text-primary-foreground btn-lg btn">
             Create Game
           </button>
+          <div className="divider"></div>
           <button className="btn-block bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg font-medium text-primary-foreground btn-lg btn">
             Join Game
           </button>
