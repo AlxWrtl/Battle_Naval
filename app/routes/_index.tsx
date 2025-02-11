@@ -7,13 +7,13 @@ export default function Index() {
         <div className="space-y-4 text-center">
           <h1 className="font-bold text-4xl tracking-tight">NAVAL BATTLE</h1>
           <Ship size={54} className="inline-block" />
-          <p className="decoration-solid underline">Strategic warfare at sea</p>
+          <p className="">Strategic warfare at sea</p>
         </div>
         <div className="space-y-4">
-          <button className="bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg w-full font-medium text-primary-foreground">
+          <button className="btn-block bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg font-medium text-primary-foreground btn-lg btn">
             Create Game
           </button>
-          <button className="bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg w-full font-medium text-primary-foreground">
+          <button className="btn-block bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg font-medium text-primary-foreground btn-lg btn">
             Join Game
           </button>
         </div>
