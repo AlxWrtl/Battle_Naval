@@ -1,40 +1,53 @@
-# Welcome to Remix!
+# Battle Naval
 
-- 📖 [Remix docs](https://remix.run/docs)
+## 🛠️ Installation
 
-## Development
+This project uses **pnpm** as a package manager. Make sure it is installed before proceeding.
 
-Run the dev server:
-
-```shellscript
-npm run dev
-```
-
-## Deployment
-
-First, build your app for production:
+### Install dependencies
 
 ```sh
-npm run build
+pnpm install
 ```
 
-Then run the app in production mode:
+## 🚀 Running the project
+
+### Development mode
+
+Start the Remix server in development mode:
 
 ```sh
-npm start
+pnpm dev
 ```
 
-Now you'll need to pick a host to deploy it to.
+### Production mode
 
-### DIY
+Build the application:
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+```sh
+pnpm build
+```
 
-Make sure to deploy the output of `npm run build`
+Then, run the server in production mode:
 
-- `build/server`
-- `build/client`
+```sh
+pnpm start
+```
 
-## Styling
+## 📌 Requirements
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+- **Node.js 20+** (Check your version with `node -v`)
+- **pnpm** (Verify installation with `pnpm -v`)
+
+## 🎨 Technologies used
+
+- **Remix** (Full-stack React framework)
+- **Vite** (Fast build tool)
+- **Prisma** (ORM for SQLite)
+- **Socket.IO** (Real-time communication)
+- **Tailwind CSS + DaisyUI** (Styling)
+- **ESLint & TypeScript** (Code quality)
+
+---
+
+🚀 **Happy coding!** 🎯
