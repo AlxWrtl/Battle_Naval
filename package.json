@@ -30,7 +30,6 @@
     "@types/react-dom": "^19.0.3",
     "@typescript-eslint/eslint-plugin": "^8.24.0",
     "@typescript-eslint/parser": "^8.24.0",
-    "daisyui": "5.0.0-beta.7",
     "eslint": "^9.20.0",
     "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-import": "^2.31.0",
