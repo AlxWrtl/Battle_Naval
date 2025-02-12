@@ -1,4 +1,4 @@
-import { Ship } from "lucide-react";
+import { Copy, Ship } from "lucide-react";
 
 export default function CreateGame() {
   return (
@@ -10,7 +10,10 @@ export default function CreateGame() {
             <Ship size={54} className="inline-block" />
             <p className="">Strategic warfare at sea</p>
           </div>
-          <div className="bg-base-100 shadow-xl w-94 card">
+          <div className="bg-base-100 shadow-xl md:w-94 card">
+            <button className="top-0 right-0 absolute m-1 btn-sm btn btn-ghost">
+              <Copy size={16} className="" />
+            </button>
             <div className="gap-5 text-center card-body">
               <h2 className="text-3xl">Room Code</h2>
               <p>It is the code Room</p>
