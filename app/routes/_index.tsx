@@ -1,4 +1,5 @@
 import { Ship } from "lucide-react";
+import { Link } from "@remix-run/react";
 
 export default function Index() {
   return (
@@ -10,13 +11,17 @@ export default function Index() {
           <p className="">Strategic warfare at sea</p>
         </div>
         <div>
-          <button className="btn-block bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg font-medium text-primary-foreground btn-lg btn">
-            Create Game
-          </button>
+          <Link to="/createGame">
+            <button className="btn-block bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg font-medium text-primary-foreground btn-lg btn">
+              Create Game
+            </button>
+          </Link>
           <div className="divider"></div>
-          <button className="btn-block bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg font-medium text-primary-foreground btn-lg btn">
-            Join Game
-          </button>
+          <Link to="/connexionPage">
+            <button className="btn-block bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg font-medium text-primary-foreground btn-lg btn">
+              Join Game
+            </button>
+          </Link>
         </div>
       </div>
     </div>

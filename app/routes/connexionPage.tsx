@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 import { Ship } from "lucide-react";
 
 export default function ConnexionPage() {
@@ -9,19 +10,21 @@ export default function ConnexionPage() {
           <Ship size={54} className="inline-block" />
           <p className="">Strategic warfare at sea</p>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-4 md:w-94">
           <input
             type="text"
             placeholder="Enter room code"
             className="input-bordered w-full input input-primary"
           />
           <div className="flex gap-x-2">
-            <button className="flex-1 bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg w-94 font-medium text-primary-foreground btn-lg btn">
+            <button className="flex-1 bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg font-medium text-primary-foreground btn-lg btn">
               Join Game
             </button>
-            <button className="flex-1 bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg font-medium text-primary-foreground btn-lg btn">
-              Back
-            </button>
+            <Link to="/">
+              <button className="flex-1 bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg font-medium text-primary-foreground btn-lg btn">
+                Back
+              </button>
+            </Link>
           </div>
         </div>
       </div>

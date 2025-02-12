@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 import { Copy, Ship } from "lucide-react";
 
 export default function CreateGame() {
@@ -20,9 +21,11 @@ export default function CreateGame() {
             </div>
           </div>
           <p className="text-center">Share this code with your opponent</p>
-          <button className="btn-block bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg font-medium text-primary-foreground btn-lg btn">
-            Back
-          </button>
+          <Link to="/">
+            <button className="btn-block bg-primary hover:bg-emerald-400/90 px-4 py-3 rounded-lg font-medium text-primary-foreground btn-lg btn">
+              Back
+            </button>
+          </Link>
         </div>
       </div>
     </div>
