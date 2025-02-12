@@ -10,9 +10,9 @@ export default function Index() {
             <Ship size={54} className="inline-block" />
             <p className="">Strategic warfare at sea</p>
           </div>
-          <div className="bg-base-100 shadow-xl card">
+          <div className="bg-base-100 shadow-xl w-94 card">
             <div className="gap-5 text-center card-body">
-              <h2 className="text-3xl text-center">Room Code</h2>
+              <h2 className="text-3xl">Room Code</h2>
               <p>It is the code Room</p>
             </div>
           </div>
