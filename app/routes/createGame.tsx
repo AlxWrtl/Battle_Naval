@@ -1,6 +1,6 @@
 import { Ship } from "lucide-react";
 
-export default function Index() {
+export default function CreateGame() {
   return (
     <div className="flex justify-center items-center bg-gradient-to-b from-background to-primary p-4 min-h-screen">
       <div className="flex flex-col items-center gap-15 m-auto">
