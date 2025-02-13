@@ -13,3 +13,32 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Room{
+  id            String        @id @default(uuid())
+  codeRoom      String
+  players       Player[]
+  ships         Ship[]
+  gameState     GameState?
+}
+
+model Player {
+  id            String        @id() @default(uuid())
+  name          String
+  userId        Int           @unique
+  room          Room          @relation(fields: [roomId], references: [id])
+  roomId        String
+}
+
+model Ship{
+  id            String        @id() @default(uuid())
+  type          String
+  room          Room          @relation(fields: [roomId], references: [id])
+  roomId        String
+}
+
+model GameState{
+  id            String        @id() @default(uuid())
+  status        Boolean       @default(false)
+  room          Room          @relation(fields: [roomId], references: [id])
+  roomId        String        @unique
+}
